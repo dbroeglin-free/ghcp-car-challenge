@@ -1,3 +1,16 @@
+# Meteo des Neiges — Geneva Region
+
+Static web app showing weather and short-term snowfall for ski resorts near Geneva.
+
+Usage
+- Open [index.html](index.html) locally or deploy via GitHub Pages.
+
+Deployment
+- This repo includes a GitHub Actions workflow at [.github/workflows/pages.yml](.github/workflows/pages.yml) that automatically publishes the site to GitHub Pages on push to `main`.
+
+Security & Data
+- Uses Open-Meteo (public, no API key) for weather data.
+- Adds a Content Security Policy meta tag restricting connections to `api.open-meteo.com`.
 # Azure Chalet Romandie - GitHub Copilot Challenge
 
 ## Pre-requisites

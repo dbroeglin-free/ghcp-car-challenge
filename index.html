@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meteo des Neiges — Geneva Region Resorts</title>
+  <meta name="description" content="Conditions météo et neige pour stations proches de Genève.">
+  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.open-meteo.com; img-src 'self' data:; style-src 'self'; script-src 'self';">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Meteo des Neiges</h1>
+    <p class="tagline">Stations de ski — région Genève</p>
+  </header>
+
+  <main class="container">
+    <section id="resorts-grid" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Données météo: Open-Meteo (public API). Déployé via GitHub Pages.</small>
+  </footer>
+
+  <!-- SVG icon sprite -->
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.2" y1="4.2" x2="5.8" y2="5.8"/><line x1="18.2" y1="18.2" x2="19.8" y2="19.8"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.2" y1="19.8" x2="5.8" y2="18.2"/><line x1="18.2" y1="5.8" x2="19.8" y2="4.2"/></g></symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24"><path fill="currentColor" d="M20 17H6a4 4 0 010-8c.2 0 .5 0 .7.1A6 6 0 0118 6a5 5 0 012 9z"/></symbol>
+    <symbol id="icon-snow" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"/><path d="M12 15v6"/><path d="M4.2 7.2l4.2 4.2"/><path d="M15.6 16.8l4.2 4.2"/><path d="M4.2 16.8l4.2-4.2"/><path d="M15.6 7.2l4.2-4.2"/></g></symbol>
+    <symbol id="icon-rain" viewBox="0 0 24 24"><path fill="currentColor" d="M20 17H6a4 4 0 010-8c.2 0 .5 0 .7.1A6 6 0 0118 6a5 5 0 012 9z"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 18l.8 2"/><path d="M12 18l.8 2"/><path d="M16 18l.8 2"/></g></symbol>
+    <symbol id="icon-thunder" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2L3 14h7l-1 8 10-12h-7z"/></symbol>
+    <symbol id="icon-fog" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 12h18"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 16h18"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 8h18"/></symbol>
+  </svg>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
